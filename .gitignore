@@ -1,3 +1,17 @@
+#Virtural envs
 *.venv
+
+#Local env files
 *.env
-__pycache__/*.pyc
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# pytest cache
+.pytest_cache/
+
+# Module tests artifacts
+module_tests/
