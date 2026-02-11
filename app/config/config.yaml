@@ -1,3 +1,5 @@
+# config/config.yaml NEGA desktop configuration file
+
 asr:
   provider: "whisper_cpp"
   whisper_cpp:
@@ -7,3 +9,13 @@ asr:
     threads: 8
     use_gpu: true
     extra_args: []   # 未来扩展用，比如加 -otxt 等
+
+llm:
+  provider: dashscope_openai
+  model: qwen-flash-character
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1" # Beijing region 
+  # runtime parametes
+  timeout_s: 30.0
+  max_retries: 2
+  temperature: 0.2
+  top_p: 0.9
