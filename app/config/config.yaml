@@ -1,0 +1,9 @@
+asr:
+  provider: "whisper_cpp"
+  whisper_cpp:
+    cli_path: "E:/NEGA/whisper/whisper.cpp/build/bin/Release/whisper-cli.exe"
+    model_path: "E:/NEGA/whisper/whisper.cpp/models/ggml-medium.en.bin"
+    language: "en"
+    threads: 8
+    use_gpu: true
+    extra_args: []   # 未来扩展用，比如加 -otxt 等
